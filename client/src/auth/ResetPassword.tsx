@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Loader2, LockKeyholeIcon } from "lucide-react";
 import { useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useUserStore } from "@/store/useUserStore";
 import { toast } from "sonner";
 
@@ -11,7 +11,7 @@ const ResetPassword = () => {
     const { loading, resetPassword } = useUserStore();
 
     const { token } = useParams<{ token: string }>();
-    const navigate = useNavigate();
+  
 
     const handleSubmit = async (e: React.FormEvent) => {
       e.preventDefault();

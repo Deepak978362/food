@@ -224,7 +224,7 @@ const MobileNavbar = () => {
               <AvatarImage src={user?.profilePicture} />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
-            <h1 className="font-bold">Patel Mernstack</h1>
+            <h1 className="font-bold">{user?.fullname}</h1>
           </div>
           <SheetClose asChild>
             {loading ? (

@@ -3,8 +3,10 @@ export type CheckoutSessionRequest = {
         menuId:string;
         name:string;
         image:string;
-        price:string;
-        quantity:string;
+        // price:string;
+        // quantity:string;
+    price: number;     
+    quantity: number;
     }[];
     deliveryDetails:{
         name:string;

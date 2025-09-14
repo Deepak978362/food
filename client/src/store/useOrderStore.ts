@@ -16,6 +16,7 @@ export const useOrderStore = create<OrderState>()(persist((set => ({
                 headers: {
                     'Content-Type': 'application/json'
                 }
+                
             });
             window.location.href = response.data.session.url;
             set({ loading: false });

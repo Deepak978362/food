@@ -48,8 +48,8 @@ const CheckoutConfirmPage = ({
           menuId: cartItem._id,
           name: cartItem.name,
           image: cartItem.image,
-          price: cartItem.price.toString(),
-          quantity: cartItem.quantity.toString(),
+          price: Number(cartItem.price.toString()),
+          quantity: Number(cartItem.quantity.toString()),
         })),
         deliveryDetails: input,
         restaurantId: restaurant?._id as string,
@@ -146,3 +146,4 @@ const CheckoutConfirmPage = ({
 };
 
 export default CheckoutConfirmPage;
+
