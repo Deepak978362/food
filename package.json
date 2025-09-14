@@ -13,8 +13,8 @@
   "author": "",
   "license": "ISC",
   "engines": {
-  "node": "18.20.4"
-},
+    "node": "18.20.4"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cloudinary": "^2.5.1",
