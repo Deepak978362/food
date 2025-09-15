@@ -2,20 +2,20 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/dist/index.js",
   "scripts": {
     "dev": "nodemon server/index.ts",
     "stripe": "stripe listen --forward-to localhost:8000/api/v1/order/webhook",
-    "build": "tsc --project server && npm install --prefix client && npm run build --prefix client",
+    "build": "npm install && tsc --project server && npm install --prefix client && npm run build --prefix client",
     "start": "node server/dist/index.js",
     "rebuild:render": "if [ \"$RENDER\" = \"true\" ]; then npm rebuild --no-audit; fi"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "engines": {
-    "node": "20.15.0"
-  },
+ "engines": {
+  "node": ">=20.15.0"
+},
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cloudinary": "^2.5.1",
