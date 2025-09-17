@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server/index.ts",
-    "stripe":"stripe listen --forward-to localhost:8000/api/v1/order/webhook",
-    "build":"npm install && npm install --prefix client && npm run build --prefix client",
-    "start":"nodemon server/index.ts"
+    "stripe": "stripe listen --forward-to localhost:8000/api/v1/order/webhook",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client",
+    "start": "nodemon server/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,7 @@
     "crypto-js": "^4.2.0",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "get-proto": "^1.0.1",
     "jsonwebtoken": "^9.0.2",
     "mailtrap": "^3.4.0",
     "mongoose": "^8.5.4",
